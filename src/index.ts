@@ -26,7 +26,7 @@ exports['default'] = () => {
       this.testrailConfig.testPlan = process.env.PLAN_NAME || 'TestPlan';
       this.taskRunDate = this.moment(new Date()).format('MMMM Do YYYY, h:mm:ss a');
 
-      if (!Object.values(this.testrailConfig).every((entry) => !!entry)) {
+      if (!Object.values(this.testrailConfig).every(entry => !!entry)) {
         this.newline().write(
           this.chalk.red.bold(
             'Error:  TESTRAIL_HOST, TESTRAIL_USER, TESTRAIL_PASSWORD and PROJECT_NAME must be set as environment variables for the reporter plugin to push the result to the Testrail',
@@ -42,13 +42,13 @@ exports['default'] = () => {
       )();
     },
 
-    async reportFixtureStart(name, path) {
+    async reportFixtureStart(name: string, path: string) {
       this.fixtureName = name;
       this.fixturePath = path;
-      logWithFormat.bind(this, `Fixture: ${this.fixtureName}`, this.chalk.yellowBright)();
+      logWithFormat.bind(this, `Fixture: ${this.fixtureName}`, this.chalk.black)();
     },
 
-    async reportTestDone(name, testRunInfo) {
+    async reportTestDone(name: string, testRunInfo: {errs, skipped}) {
       const { errs, skipped } = testRunInfo;
       const testStatus = skipped ? 'Skipped' : errs.length === 0 ? 'Passed' : 'Failed';
       const logger = errs.length === 0 ? this.chalk.green : this.chalk.red;
@@ -76,7 +76,7 @@ exports['default'] = () => {
       });
     },
 
-    async reportTaskDone(endTime, passed /*, warnings*/) {
+    async reportTaskDone(endTime: number, passed: number /*, warnings*/) {
       const duration = this.moment
         .duration(endTime - this.taskStartTime)
         .format('h[h] mm[m] ss[s]');
@@ -195,7 +195,7 @@ exports['default'] = () => {
         .write(this.chalk.blue.bold('Plan name(id) '))
         .write(this.chalk.yellow(plan.name + '(' + plan.id + ')'));
 
-      // get/add plan
+      // get/add suite
       const suite = await this._getSuiteOrThrowAndExit(
         testrailApi,
         this.testrailConfig,
@@ -205,13 +205,7 @@ exports['default'] = () => {
       const userAgentsDetails = this.userAgents[0].split('/');
 
       const runName =
-        'Run_' +
-        this.taskRunDate +
-        '(' +
-        userAgentsDetails[0] +
-        '_' +
-        userAgentsDetails[1] +
-        ')';
+        `Run_${this.taskRunDate} (${userAgentsDetails[0]}_${userAgentsDetails[1]})`;
       const runDetails = {
         suite_id: suite.id,
         include_all: false,
