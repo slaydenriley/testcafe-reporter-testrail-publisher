@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-testrail-publisher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "testcafe-reporter-testrail-publisher TestCafe reporter plugin.",
   "private": false,
   "repository": {
