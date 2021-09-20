@@ -1,5 +1,6 @@
-const TestrailApi = require('testrail-api');
+Object.defineProperty(exports, "__esModule", { value: true });
 
+const TestrailApi = require('testrail-api');
 exports['default'] = () => {
   return {
     noColors: false,

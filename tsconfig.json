@@ -5,10 +5,17 @@
     "lib": [
       "es6"
     ],
-
+    "declaration": true,
     "sourceMap": true,
     "outDir": "lib",
     "removeComments": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "typeRoots": [
       "src/customTypings",
       "node_modules/@types"
@@ -21,6 +28,7 @@
   },
   "exclude": [
     "node_modules/**",
+    "test-run-infos-samples/**",
     "test/**"
   ],
   "include": [
