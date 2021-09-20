@@ -250,7 +250,7 @@ exports['default'] = () => {
             this.chalk.red(`Error getting the project ${testRailConfig.projectName}`),
           )
           .newline()
-          .write(this.chalk.red(`Error: ${e.message}`));
+          .write(this.chalk.red(`Error: ${JSON.stringify(e.message, null, 2)}`));
         process.exit(1);
       }
 
@@ -276,7 +276,7 @@ exports['default'] = () => {
           .write(this.chalk.red.bold(this.symbols.err))
           .write(this.chalk.red(`Error getting the plans`))
           .newline()
-          .write(this.chalk.red(`Error: ${e.message}`));
+          .write(this.chalk.red(`Error: ${JSON.stringify(e.message, null, 2)}`));
         process.exit(1);
       }
 
@@ -300,7 +300,7 @@ exports['default'] = () => {
           .write(this.chalk.red.bold(this.symbols.err))
           .write(this.chalk.red(`Error getting suites`))
           .newline()
-          .write(this.chalk.red(`Error: ${e.message}`));
+          .write(this.chalk.red(`Error: ${JSON.stringify(e.message, null, 2)}`));
         process.exit(1);
       }
 
@@ -317,7 +317,7 @@ exports['default'] = () => {
           .write(this.chalk.red.bold(this.symbols.err))
           .write(this.chalk.red(`Error at AddPlanEntry`))
           .newline()
-          .write(this.chalk.red(`Error: ${e.message}`));
+          .write(this.chalk.red(`Error: ${JSON.stringify(e.message, null, 2)}`));
         process.exit(1);
       }
 
@@ -342,7 +342,7 @@ exports['default'] = () => {
           .write(this.chalk.red.bold(this.symbols.err))
           .write(this.chalk.red(`Error at Adding results`))
           .newline()
-          .write(this.chalk.red(`Error: ${e.message}`));
+          .write(this.chalk.red(`Error: ${JSON.stringify(e.message, null, 2)}`));
         process.exit(1);
       }
     },
