@@ -1,7 +1,5 @@
 # testcafe-reporter-testrail-publisher
 
-[![Build Status](https://travis-ci.org/adilbenmoussa/testcafe-reporter-testrail-publisher.svg)](https://travis-ci.org/adilbenmoussa/testcafe-reporter-testrail-publisher)
-
 This is the **testcafe-reporter-testrail-publisher** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
 <p align="center">
