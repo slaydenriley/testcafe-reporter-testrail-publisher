@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-testrail-publisher",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "testcafe-reporter-testrail-publisher TestCafe reporter plugin.",
   "private": false,
   "repository": {
@@ -20,7 +20,8 @@
     "eslint-fix": "eslint ./ --ext .js,.ts,.tsx --fix",
     "build": "rimraf lib && tsc",
     "package": "npm run build && npm run rimraf:package && rm -f my*.tgz && npm pack",
-    "rimraf:package": "rimraf ./package"
+    "rimraf:package": "rimraf ./package",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "testcafe",
