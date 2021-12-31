@@ -69,4 +69,4 @@ Configuration can be provided via:
 
 ## Author
 
-Adil Ben Moussa (http://tt-tech.io)
+Adil Ben Moussa (adil[dot]benmoussa[@]gmail[dot]com)
