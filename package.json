@@ -1,13 +1,13 @@
 {
-  "name": "testcafe-reporter-testrail-publisher",
+  "name": "testcafe-reporter-testrail-submittable",
   "version": "1.1.0",
-  "description": "testcafe-reporter-testrail-publisher TestCafe reporter plugin.",
+  "description": "testcafe-reporter-testrail-submittable TestCafe reporter plugin.",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adilbenmoussa/testcafe-reporter-testrail-publisher.git"
+    "url": "git+https://github.com/slaydenriley/testcafe-reporter-testrail-publisher.git"
   },
-  "author": "Adil Ben Moussa <adil.benmoussa@gmail.com> (http://tt-tech.io)",
+  "author": "Riley Slayden",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
@@ -31,9 +31,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adilbenmoussa/testcafe-reporter-testrail-publisher/issues"
+    "url": "https://github.com/slaydenriley/testcafe-reporter-testrail-publisher/issues"
   },
-  "homepage": "https://github.com/adilbenmoussa/testcafe-reporter-testrail-publisher#readme",
+  "homepage": "https://github.com/slaydenriley/testcafe-reporter-testrail-publisher#readme",
   "dependencies": {
     "@types/minimist": "1.2.0",
     "@types/node": "14.0.24",
