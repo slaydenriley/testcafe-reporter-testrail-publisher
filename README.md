@@ -1,18 +1,11 @@
 # testcafe-reporter-testrail-publisher
 
-This is the **testcafe-reporter-testrail-publisher** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
-
-<p align="center">
-    <img src="https://raw.github.com/adilbenmoussa/testcafe-reporter-testrail-publisher/master/media/preview1.png" alt="preview success" />
-</p>
-<p align="center">
-    <img src="https://raw.github.com/adilbenmoussa/testcafe-reporter-testrail-publisher/master/media/preview2.png" alt="preview failure" />
-</p>
+This is the **testcafe-reporter-testrail-submittable** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
 ## Install
 
 ```
-npm install testcafe-reporter-testrail-publisher
+npm install testcafe-reporter-testrail-submittable
 ```
 
 ## Usage
@@ -69,4 +62,4 @@ Configuration can be provided via:
 
 ## Author
 
-Adil Ben Moussa (adil[dot]benmoussa[@]gmail[dot]com)
+Forked and modified from Adil Ben Moussa (adil[dot]benmoussa[@]gmail[dot]com)
