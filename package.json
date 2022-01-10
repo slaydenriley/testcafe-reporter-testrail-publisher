@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-testrail-submittable",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "testcafe-reporter-testrail-submittable TestCafe reporter plugin.",
   "private": false,
   "repository": {
