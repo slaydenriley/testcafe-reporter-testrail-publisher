@@ -13,7 +13,7 @@ npm install testcafe-reporter-testrail-submittable
 When you run tests from the command line, specify the reporter name by using the `--reporter` option:
 
 ```
-testcafe chrome 'path/to/test/file.js' --reporter testrail-publisher
+testcafe chrome 'path/to/test/file.js' --reporter testrail-submittable
 ```
 
 When you use API, pass the reporter name to the `reporter()` method:
