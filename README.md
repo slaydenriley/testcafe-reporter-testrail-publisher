@@ -1,4 +1,4 @@
-# testcafe-reporter-testrail-publisher
+# testcafe-reporter-testrail-submittable
 
 This is the **testcafe-reporter-testrail-submittable** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
