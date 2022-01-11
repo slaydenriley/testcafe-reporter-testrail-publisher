@@ -23,7 +23,7 @@ testCafe
   .createRunner()
   .src('path/to/test/file.js')
   .browsers('chrome')
-  .reporter('testcafe-reporter-testrail-publisher') // <-
+  .reporter('testcafe-reporter-testrail-submittable') // <-
   .run();
 ```
 
